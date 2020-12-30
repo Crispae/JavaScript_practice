@@ -15,7 +15,7 @@
 
 */
 
-const { stringify } = require("querystring");
+
 
 // Defining a function
 function add(num1,num2){
@@ -115,4 +115,25 @@ console.log(typeof(String(a))); //String
   let z = true;
   console.log(+z); // number
   console.log(typeof(+z)); // number
+
+/*  /// ARROW Function in JavaScript/////
+    - It come along with ES6 version of javaScript
+    In arrow function function Keyword is removed
+    - Everything after the arrow is assumed to be returned
+    - let sum2 = (a,b) => a+b is also correct
+    - Arrow function mainly useful when you create
+      ananymous function
+    */
+// method1
+let sum2 = (a,b) =>{return a+b;}
+let soo = sum2(7,8);
+console.log(soo);
+
+// method2
+let sum3 = (a,b) => a+b;
+console.log(sum3(9,5));// 14 it will return a+b
+
+//method 3 if we have only one argument/parameter
+let greet = name => `hello ${name}`
+console.log(greet("saurav"));
 
