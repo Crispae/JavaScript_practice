@@ -87,6 +87,27 @@ if(x>y){
 let m =10;
 let n = 20;
  console.log((m<n) && (m>5)); //true
-
- // OR opretor
+// OR opretor
  console.log((n>m) || (n==78)); //true
+ // NOT operator
+ console.log(!(m===n)); // this will invert the result
+
+// Ternary operator 
+/*
+Shortcut for if-else statement.
+condition opertor result cannot be assigned to any variable
+SYNTAX: let <name> = condition? Value1: value2;
+In this we will provide condtion and if condition is true Value1
+will be assigned otherwise value2 will be assigned to the variable
+*/
+ let age = 5;
+ let canDrive = (age>18)?"can drive":"not eligible to drive";
+ console.log(canDrive);
+
+
+ let greeting =(username) => {
+     let name = (username)? username:"Anonymous";
+     return (`how are you ,${name}`)
+ }
+
+ console.log(greeting());
