@@ -61,6 +61,12 @@ console.log(actor);
     - No keywords of javascript should be used
     
 */
+// we can also declare multiple variable at one time and then assign
+// a value to later not at that instant 
+
+let happy,nothappy;
+happy = "not";
+nothappy = "true"
 
 
 /********* Data Types in javascript**************
@@ -70,6 +76,8 @@ console.log(actor);
  * Example of primitive data-type: boolea,undefiend,null,string(Text),number
  * Non-primitive data type are mutable and they are stored as reference or address.
  * Example of non-primitive datatype are object,Array,Function
+ * Nmmber data type in javaScript is Always decimal even we see it
+ * as a number but it is still a decimal.
  */
 
  // boolean
