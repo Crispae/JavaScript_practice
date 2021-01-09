@@ -15,6 +15,28 @@ console.log(name);
 
 // Every const declaration, therefore, must be initialized at the time of declaration.
 
+// name = "saurav // here name has global scope
+// var name = "saurav" // here name has function scope
+// let name = "saurav // here anem has block scope
+
+
+function name(){
+  mygreet = "hello everyone";
+  var greet = "hello world"; // this can be accesed in whole function wether function have nested block but if defined in fnction can't be accessed 
+  // in otside that fnction
+  var i =2;
+  if (i === 2){
+    console.log(`This is global variable:- ${mygreet}`)
+    console.log(`var variable is calling in function ${greet}`);
+    let block = "this is block variable"
+    console.log(`this is let variable which is accessed in only block:-${block}`)
+  } 
+//console.log(block);
+console.log(greet);
+}
+name();
+console.log(mygreet) // This variable is defined in function bt can be accessed eveywhere
+
 
 let greeting = "say Hi";
 let times = 4;
@@ -67,6 +89,27 @@ console.log(actor);
 let happy,nothappy;
 happy = "not";
 nothappy = "true"
+
+
+
+/*  Function hoisting in javascript 
+ 
+ console.log(`This is below function ${greet()}`)
+ function greet(){
+ console.log("hello world");
+ }
+ 
+ // this function is called before it declartion and it will work because here function hoisting will take palce 
+ which will put the the function above it scope
+ 
+ 
+ var greet_function = function(){
+ console.log("this function is defined with variable assigment not function keywrd decleartion 
+ show it will not get hoisted")
+ }
+ // same thing happen in the case of anyonmous function or arrow function they are not histed in case of javascript
+ 
+ */
 
 
 /********* Data Types in javascript**************
